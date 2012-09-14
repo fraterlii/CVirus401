@@ -1,4 +1,4 @@
-﻿Build started 9/12/2012 12:51:20 PM.
+﻿Build started 9/13/2012 10:37:17 PM.
      1>Project "C:\Users\menhalg\Documents\GitHub\CVirus401\ChatbotPrototype\ChatbotPrototype\ChatbotPrototype.vcxproj" on node 2 (build target(s)).
      1>InitializeBuildStatus:
          Creating "Debug\ChatbotPrototype.unsuccessfulbuild" because "AlwaysCreate" was specified.
@@ -21,4 +21,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:01.73
+Time Elapsed 00:00:01.83
