@@ -3,7 +3,27 @@
 #include <stdlib.h>
 #include <time.h>
 
-namespace ChatBot {
+using namespace std;
+public class Chatbot
+{
+public:
+	// chatbot-related data declarations
+	string cbOutput;
+
+	// user-related data declarations
+	string uInput;
+	string uKeywordsArray[];
+
+
+
+	// member functions
+	void showChatbotOutput() {
+		cout << "Chatbot says hi" << endl;
+	}
+
+};
+
+namespace chatter {
 	#include <string>
 	using namespace std;
 
@@ -17,14 +37,18 @@ namespace ChatBot {
 }
 
 using namespace std;
-
 void main(){
-	srand((int)time(NULL));
-	ChatBot::outputCB = ChatBot::greetingsArrayCB[rand() % 5];
+
+	Chatbot Alpha;
+	Alpha.showChatbotOutput();
+
+
+	/*srand((int)time(NULL));
+	chatter::outputCB = chatter::greetingsArrayCB[rand() % 5];
 
 	cout<< endl<< endl;
 
-	ChatBot::showOutputCB();
+	chatter::showOutputCB();*/
 	system ("pause");
 	main();
 
