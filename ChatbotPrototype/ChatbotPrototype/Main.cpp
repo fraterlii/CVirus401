@@ -4,23 +4,51 @@
 #include <time.h>
 
 using namespace std;
+public class ResponseNode 
+{
+public:
+	string response;
+	int outputCount;
+
+	// class constructor
+	ResponseNode(string init) {
+		response = init;
+		int outputCount = 0;
+	}
+
+	ResponseNode() {
+		int outputCount = 0;
+	}
+};
+
+using namespace std;
 public class Chatbot
 {
+private:
+	
+
 public:
 	// chatbot-related data declarations
 	string cbOutput;
+	ResponseNode x[5];
 
 	// user-related data declarations
 	string uInput;
 	string uKeywordsArray[];
 
-
+	// class constructor
+	Chatbot() {
+		configureResponses();
+	}
 
 	// member functions
 	void showChatbotOutput() {
-		cout << "Chatbot says hi" << endl;
+		cout << cbOutput << endl;
 	}
 
+	void configureResponses() {
+		
+	}
 };
 
 namespace chatter {
@@ -39,8 +67,11 @@ namespace chatter {
 using namespace std;
 void main(){
 
-	Chatbot Alpha;
-	Alpha.showChatbotOutput();
+	Chatbot Alice;
+	/*ResponseNode x("sorry");
+	ResponseNode assertiveResponses[] = {"I'm not saying another word.", "I'd like to speak with my attorney."};
+	Alice.cbOutput = assertiveResponses[0].response;*/
+	Alice.showChatbotOutput();
 
 
 	/*srand((int)time(NULL));
@@ -49,6 +80,7 @@ void main(){
 	cout<< endl<< endl;
 
 	chatter::showOutputCB();*/
+
 	system ("pause");
 	main();
 
